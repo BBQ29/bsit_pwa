@@ -1,0 +1,10 @@
+/* style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-edit:hover {
+    /* Add your desired hover animation from Animate.css */
+    animation: animate__animated animate__bounce;
+}
