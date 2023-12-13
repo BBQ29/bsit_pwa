@@ -35,7 +35,7 @@
 							<input type="text" class="form-control" name="lastname">
 						</div>
 					</div>
-										<div style="height:10px;"></div>
+					<div style="height:10px;"></div>
 					<div class="row">
 						<div class="col-lg-2">
 							<label class="control-label" style="position:relative; top:7px;">Birthdate:</label>
@@ -50,7 +50,7 @@
 							<label class="control-label" style="position:relative; top:7px;">Age:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="number" class="form-control" name="age">
+							<input type="number" class="form-control" name="age" readonly>
 						</div>
 					</div>
 					<div style="height:10px;"></div>
@@ -84,9 +84,15 @@
 							<label class="control-label" style="position:relative; top:7px;">Gender:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" class="form-control" name="gender">
+							<select class="form-control" name="gender">
+								<option value="Male"></option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+								<option value="LGBTQIA+">LGBTQIA+</option>
+							</select>
 						</div>
 					</div>
+
 
 					<div style="height:10px;"></div>
 					<div class="row">
@@ -109,3 +115,27 @@
             </div>
         </div>
     </div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Listen for changes in the birthdate input
+        $('input[name="birthdate"]').on('change', function () {
+            // Get the selected birthdate
+            var birthdate = new Date($(this).val());
+            
+            // Calculate the age
+            var today = new Date();
+            var age = today.getFullYear() - birthdate.getFullYear();
+            
+            // Adjust age if the birthday hasn't occurred yet this year
+            if (today.getMonth() < birthdate.getMonth() || (today.getMonth() === birthdate.getMonth() && today.getDate() < birthdate.getDate())) {
+                age--;
+            }
+
+            // Set the calculated age to the age input
+            $('input[name="age"]').val(age);
+        });
+    });
+</script>

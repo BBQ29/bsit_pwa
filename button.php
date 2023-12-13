@@ -110,12 +110,20 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-2">
-							<label style="position:relative; top:7px;">Gender:</label>
+							<label class="control-label" style="position:relative; top:7px;">Gender:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="gender" class="form-control" value="<?php echo $erow['gender']; ?>">
+							<select class="form-control" name="gender">
+								<!-- Placeholder option with an empty value -->
+								<option value="" <?php echo ($erow['gender'] == '') ? 'selected' : ''; ?>></option>
+								<!-- Options for Male, Female, and LGBTQIA+ -->
+								<option value="Male" <?php echo ($erow['gender'] == 'Male') ? 'selected' : ''; ?>>Male</option>
+								<option value="Female" <?php echo ($erow['gender'] == 'Female') ? 'selected' : ''; ?>>Female</option>
+								<option value="LGBTQIA+" <?php echo ($erow['gender'] == 'LGBTQIA+') ? 'selected' : ''; ?>>LGBTQIA+</option>
+							</select>
 						</div>
 					</div>
+
                 </div> 
 				</div>
                 <div class="modal-footer">
