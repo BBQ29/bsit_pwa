@@ -54,7 +54,7 @@
 							<label style="position:relative; top:7px;">Middle Name:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="lastname" class="form-control" value="">
+							<input type="text" name="middlename" class="form-control" value="<?php echo $erow['middlename']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -70,7 +70,7 @@
 							<label style="position:relative; top:7px;">Birth Date:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="birthdate" class="form-control" value="<?php echo $erow['birthdate']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -78,7 +78,7 @@
 							<label style="position:relative; top:7px;">Age:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="age" class="form-control" value="<?php echo $erow['age']; ?>">
 						</div>
 					</div>
 
@@ -97,7 +97,7 @@
 							<label style="position:relative; top:7px;">Contact No.:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="contact_no" class="form-control" value="<?php echo $erow['contact_no']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -105,7 +105,7 @@
 							<label style="position:relative; top:7px;">Civil Status:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="civil_stat" class="form-control" value="<?php echo $erow['civil_stat']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -113,7 +113,7 @@
 							<label style="position:relative; top:7px;">Gender:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="gender" class="form-control" value="<?php echo $erow['gender']; ?>">
 						</div>
 					</div>
                 </div> 
@@ -157,7 +157,7 @@
 							<label style="position:relative; top:7px;">Middle Name:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="lastname" class="form-control" value="">
+							<input type="text" name="middlename" class="form-control" value="<?php echo $erow['middlename']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -173,7 +173,7 @@
 							<label style="position:relative; top:7px;">Birth Date:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="birthdate" class="form-control" value="<?php echo $erow['birthdate']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -181,7 +181,7 @@
 							<label style="position:relative; top:7px;">Age:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="age" class="form-control" value="<?php echo $erow['age']; ?>">
 						</div>
 					</div>
 
@@ -200,7 +200,7 @@
 							<label style="position:relative; top:7px;">Contact No.:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="contact_no" class="form-control" value="<?php echo $erow['contact_no']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -208,7 +208,7 @@
 							<label style="position:relative; top:7px;">Civil Status:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="civil_stat" class="form-control" value="<?php echo $erow['civil_stat']; ?>">
 						</div>
 					</div>
 					<div class="row">
@@ -216,7 +216,7 @@
 							<label style="position:relative; top:7px;">Gender:</label>
 						</div>
 						<div class="col-lg-10">
-							<input type="text" name="" class="form-control" value="">
+							<input type="text" name="gender" class="form-control" value="<?php echo $erow['gender']; ?>">
 						</div>
 					</div>
                 </div> 
